@@ -1,0 +1,29 @@
+### /ai/generate
+GET {{host}}/ai/generate
+
+> {%
+    client.test("The request executed successfully.", () => {
+        const status = response.status;
+        client.assert(status === 200, `The response code expected 200, but received ${status}.`);
+    });
+
+    client.test("The response content type is JSON.", () => {
+        const type = response.contentType.mimeType;
+        client.assert(type === "application/json", `The content type expected 'application/json', but received ${type}.`);
+    });
+%}
+
+### /api/generateStream
+GET {{host}}/ai/generateStream
+
+> {%
+    client.test("The request executed successfully.", () => {
+        const status = response.status;
+        client.assert(status === 200, `The response code expected 200, but received ${status}.`);
+    });
+
+    client.test("The response content type is JSON.", () => {
+        const type = response.contentType.mimeType;
+        client.assert(type === "application/json", `The content type expected 'application/json', but received ${type}.`);
+    });
+%}

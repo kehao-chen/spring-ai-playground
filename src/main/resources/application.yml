@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-ai-playground
+
+  ai:
+    openai:
+      base-url: ENC(4ehGJ1/MhyY+OUj/Tl7WTaxJ0CQwVuOAhlAnDsGecfDNmnfpcrNIL6GT6wNqD9oS699mzDvtHF4MGa8xjXaQnQ==)
+      api-key: ENC(7jaJBAMf+f8B3Pez5eQ8aGPGIyPbeggQfURC2f2tx4HctFSoEH5AEMuO24vly60Pu8K3HhYOWStO4P4S1gTCWV10D5jFtfKr4XynZ8pAC6uXH6QBlJZhFNx+7ipDvDUr)
+      chat:
+        options:
+          model: gpt-4o-mini
+
+server:
+  port: 18080

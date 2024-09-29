@@ -1,4 +1,4 @@
-package ninja.happyhacking.spring_ai_playground
+package ninja.happyhacking.springaiplayground
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

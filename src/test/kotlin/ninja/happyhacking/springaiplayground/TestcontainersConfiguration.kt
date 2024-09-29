@@ -1,4 +1,4 @@
-package ninja.happyhacking.spring_ai_playground
+package ninja.happyhacking.springaiplayground
 
 import org.springframework.boot.test.context.TestConfiguration
 

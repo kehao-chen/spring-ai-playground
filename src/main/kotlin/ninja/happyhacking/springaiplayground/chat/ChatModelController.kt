@@ -1,4 +1,4 @@
-package ninja.happyhacking.springaiplayground.chatmodel
+package ninja.happyhacking.springaiplayground.chat
 
 import org.springframework.ai.chat.messages.UserMessage
 import org.springframework.ai.chat.model.ChatResponse

@@ -9,6 +9,15 @@ spring:
       chat:
         options:
           model: gpt-4o-mini
+      embedding:
+        options:
+          model: text-embedding-3-small
+    vectorstore:
+      qdrant:
+        host: ENC(ajQcZAlUWhXRfKGk5TSNWKYyQeujbC++hluzaqduOrDDX6fXmiOtHpYvauBdVni8CShVSGEdZ9xh1x2ZiX59PYWzptxzVwiViBbbJ5EDvP92CUtfW+3meTorupYYiO/7OhIEVWgZ89GnB88Wm5U6eA==)
+        port: 6334
+        api-key: ENC(qhEH0zGSAgBd1dl9cPbRJsBBwnUGXVm3l8y7C5Jdw78OD6f88yhcJDxMZGbi4ATZLJgNJkyuE2n9Vx9Q0wZbc0SNm2BJPJU7DKM8471b/B5IqbYf9ao+sbbfW5l/DN3N)
+        collection-name: spring-ai-playground
 
 server:
   port: 18080

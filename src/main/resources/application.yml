@@ -18,6 +18,12 @@ spring:
         port: 6334
         api-key: ENC(qhEH0zGSAgBd1dl9cPbRJsBBwnUGXVm3l8y7C5Jdw78OD6f88yhcJDxMZGbi4ATZLJgNJkyuE2n9Vx9Q0wZbc0SNm2BJPJU7DKM8471b/B5IqbYf9ao+sbbfW5l/DN3N)
         collection-name: spring-ai-playground
+        use-tls: true
+        initialize-schema: true
+
+logging:
+  level:
+    root: info
 
 server:
   port: 18080

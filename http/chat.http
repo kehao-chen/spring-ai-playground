@@ -13,7 +13,7 @@ GET {{host}}/ai/generate
     });
 %}
 
-### /api/generateStream
+### /ai/generateStream
 GET {{host}}/ai/generateStream
 
 > {%
@@ -28,7 +28,7 @@ GET {{host}}/ai/generateStream
     });
 %}
 
-### /api/embedding
+### /ai/embedding
 GET {{host}}/ai/embedding
 
 > {%
@@ -43,7 +43,7 @@ GET {{host}}/ai/embedding
     });
 %}
 
-### /api/vector
+### /ai/vector
 GET {{host}}/ai/vector
 
 > {%
@@ -57,3 +57,17 @@ GET {{host}}/ai/vector
         client.assert(type === "application/json", `The content type expected 'application/json', but received ${type}.`);
     });
 %}
+
+### /ai/upload
+POST {{host}}/ai/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="the-gift-of-the-magi.txt"
+
+< ./the-gift-of-the-magi.txt
+--WebAppBoundary--
+
+### /ai/ask
+GET {{host}}/ai/ask
+    ?message=What motivates Della to sell her hair, and what impact does this decision have on her emotionally?
